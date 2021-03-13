@@ -6,11 +6,8 @@ import router from './router'
 import ElementUI from 'element-ui' // elemenUI
 import 'element-ui/lib/theme-chalk/index.css' // elementUI主题样式
 import 'font-awesome/css/font-awesome.min.css' // 奥森图标库
-<<<<<<< HEAD
 import '@/assets/css/icon.css';
 import '@/layout/directives';
-=======
->>>>>>> 4460e6aa3f2e35dda816bff71f674e423c2c610e
 
 Vue.config.productionTip = false
 
