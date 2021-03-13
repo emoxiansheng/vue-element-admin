@@ -37,10 +37,13 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
+<<<<<<< HEAD
         test: /\.sass$/,
         loaders: ['style', 'css', 'sass']
       },
       {
+=======
+>>>>>>> 4460e6aa3f2e35dda816bff71f674e423c2c610e
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]

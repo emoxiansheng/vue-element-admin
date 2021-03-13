@@ -8,6 +8,7 @@ export default new Router({
   routes: [
     {
       path: '/',
+<<<<<<< HEAD
       redirect: '/dashboard'
     },
     {
@@ -29,6 +30,10 @@ export default new Router({
     {
       path: '*',
       redirect: '/404'
+=======
+      name: 'HelloWorld',
+      component: HelloWorld
+>>>>>>> 4460e6aa3f2e35dda816bff71f674e423c2c610e
     }
   ]
 })
