@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import vHead from './Header.vue';
-import vSidebar from './Sidebar.vue';
-import vTags from './Tags.vue';
-import bus from './bus';
+import vHead from './Header.vue'; // 头部导航
+import vSidebar from './Sidebar.vue'; // 侧边栏
+import vTags from './Tags.vue'; // 路由标签栏
+import bus from './bus'; // Vue组件通信中eventBus的使用
 export default {
     data() {
         return {
