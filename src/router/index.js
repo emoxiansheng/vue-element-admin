@@ -12,8 +12,8 @@ export default new Router({
     },
     {
       path: '/',
-      component: () => import(/* webpackChunkName: "home" */ '@/layout/Home.vue'),
-      meta: { title: '自述文件' },
+      component: () => import(/* webpackChunkName: "home" */ '@/page/Dashboard.vue'),
+      // meta: { title: '自述文件' },
       children: [
           {
             path: '/dashboard',
@@ -21,14 +21,6 @@ export default new Router({
             meta: { title: '系统首页' }
         }
       ]
-    },{
-      path: '/login',
-      component: () => import(/* webpackChunkName: "login" */ '@/page/Login.vue'),
-      meta: { title: '登录' }
-    },
-    {
-      path: '*',
-      redirect: '/404'
     }
   ]
 })

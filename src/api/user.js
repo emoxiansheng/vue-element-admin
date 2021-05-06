@@ -7,3 +7,11 @@ export function login(params) {
     data: params // 请求参数
   })
 }
+
+export function list(params) {
+  return request({
+    url: '/adm/billboard/select',
+    method: 'get', // 请求方式
+    data: params // 请求参数
+  })
+}

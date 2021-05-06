@@ -13,11 +13,18 @@
     "axios": "^0.21.1",
     "element-ui": "^2.15.1",
     "font-awesome": "^4.7.0",
+    "less": "3.9.0",
+    "less-loader": "4.1.0",
     "node-sass": "4.14.1",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
     "sass-loader": "7.3.1",
+    "swiper": "3",
     "vue": "^2.5.2",
+    "vue-awesome-swiper": "3",
     "vue-router": "^3.0.1",
-    "vue-schart": "^2.0.0"
+    "vue-schart": "^2.0.0",
+    "vue-seamless-scroll": "^1.1.23"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

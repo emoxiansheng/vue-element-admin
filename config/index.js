@@ -3,15 +3,41 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+// 引入等比适配插件
+const px2rem = require('postcss-px2rem')
+
+// 配置基本大小
+const postcss = px2rem({
+  // 基准大小 baseSize，需要和rem.js中相同
+  remUnit: 19
+})
 
 module.exports = {
+  lintOnSave: true,
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          postcss
+        ]
+      }
+    }
+  },
   dev: {
 
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
-
+    proxyTable: {
+      '/api': {
+        target:'http://ltl.starfirelink.com', 
+        // secure: false, // 如果是https接口，需要配置这个参数
+        changeOrigin:true,
+        pathRewrite:{
+          '^/api': ''
+        }
+      }
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined

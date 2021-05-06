@@ -8,11 +8,15 @@ import 'element-ui/lib/theme-chalk/index.css' // elementUI主题样式
 import 'font-awesome/css/font-awesome.min.css' // 奥森图标库
 import '@/assets/css/icon.css';
 import '@/layout/directives';
+import scroll from 'vue-seamless-scroll'
+import axios from 'axios'
+import './utils/rem'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI) // 全局注册
-
+Vue.use(scroll)
+Vue.prototype.axios = axios
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
